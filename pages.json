@@ -1,0 +1,29 @@
+{
+  "home": {
+    "about_kicker": "Background",
+    "about_title": "About Me",
+    "about_text": "I’ve worked on projects ranging from reverse-engineering a work light in SOLIDWORKS to planning and leading a shed and accessible-sink build. I’m also involved in CU Autonomous Racing, where I’m working on the steering system and master CAD assembly."
+  },
+  "about": {
+    "title": "About Me",
+    "deck": "Education, technical experience, and engineering interests.",
+    "heading": "Background & Interests",
+    "paragraphs": [
+      "I’m Drew, a mechanical engineering student at the University of Colorado Boulder, pursuing a minor in physics and expecting to graduate in May 2029. My interests include mechanical design, automotive engineering, aerospace, and clean energy.",
+      "Through coursework and projects, I’ve gained experience in CAD, reverse engineering, and fabrication. For my Nitecore work light project, I disassembled the product, measured its components, and recreated the assembly in SOLIDWORKS. Some measured dimensions caused parts to interfere in the assembly, so I had to recheck them and adjust the model.",
+      "My Eagle Scout project involved planning and leading the construction of a shed structure and an accessible sink at Animal Assisted Happiness. As the farm’s needs changed, I revised the plans and organized volunteers around the work available each day. The project gave me experience with construction, budgeting, and leading other people through a build.",
+      "I’m also involved in CU Autonomous Racing, where I’m working on steering-system design and the master CAD assembly. As the project develops, I plan to contribute additional components and mounting designs."
+    ],
+    "experience_heading": "Work & Leadership Experience",
+    "experience_text": "As a lead instructor at Camp Galileo, I guided campers through STEM projects and helped them identify problems with their designs. I also taught counselors in training leadership and instructional skills. In Scouting, I served as Senior Patrol Leader and Assistant Senior Patrol Leader, organizing meetings and outings and mentoring younger Scouts.",
+    "opportunity_heading": "Internship Opportunities",
+    "opportunity_text": "I’m currently seeking mechanical engineering internships where I can apply my CAD and fabrication experience and continue developing my design and testing skills.",
+    "photo": "andrew-backpacking.jpg",
+    "photo_alt": "Andrew backpacking outdoors",
+    "photo_caption": "Backpacking."
+  },
+  "contact": {
+    "heading": "Engineering Internship Opportunities",
+    "text": "I’m currently seeking mechanical engineering internship opportunities. You can reach me by email or connect with me on LinkedIn."
+  }
+}

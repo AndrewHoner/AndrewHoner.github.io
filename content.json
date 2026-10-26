@@ -1,0 +1,370 @@
+{
+  "person": {
+    "name": "Andrew Honer",
+    "email": "drew.honer@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/andrew-honer/",
+    "degree": "Mechanical Engineering",
+    "school": "University of Colorado Boulder",
+    "graduation": "May 2029",
+    "intro": "I'm studying mechanical engineering at CU Boulder with a minor in physics. I enjoy CAD, reverse engineering, and hands-on projects, especially mechanical and automotive design."
+  },
+  "projects": [
+    {
+      "slug": "nitecore",
+      "number": "01",
+      "title": "Nitecore NWL20",
+      "subtitle": "Reverse engineering a work light",
+      "category": "cad",
+      "category_label": "Reverse engineering · SOLIDWORKS",
+      "status": "Completed",
+      "year": "2026",
+      "summary": "I disassembled and measured a Nitecore work light, then modeled its parts and assembly in SOLIDWORKS.",
+      "lead": "I disassembled a Nitecore NWL20 work light and recreated its components and assembly in SOLIDWORKS.",
+      "hero": "nitecore-standing.webp",
+      "hero_alt": "Andrew’s SOLIDWORKS model of the yellow and black Nitecore NWL20 in its upright position",
+      "hero_caption": "My assembled SOLIDWORKS model, shown in the upright configuration.",
+      "facts": [
+        [
+          "Context",
+          "MCEN 1025 · April–May 2026"
+        ],
+        [
+          "My role",
+          "Measurement, CAD & drawings"
+        ],
+        [
+          "Tools",
+          "SOLIDWORKS, calipers"
+        ],
+        [
+          "Deliverables",
+          "16 parts · 2 subassemblies · 5 drawings"
+        ]
+      ],
+      "note": "An educational reverse-engineering project. Nitecore designed the original product. I created the CAD model and engineering drawings shown here.",
+      "sections": [
+        {
+          "id": "overview",
+          "label": "01 / Overview",
+          "title": "Project Overview",
+          "paragraphs": [
+            "I chose this work light because I wanted something I could take apart and learn about while making the model. The NWL20 has a magnetic base and a hinge that rotates through 180 degrees, along with electronics, wiring, and internal mounting features."
+          ]
+        },
+        {
+          "id": "process",
+          "label": "02 / Process",
+          "title": "Measurement & Modeling",
+          "paragraphs": [
+            "I measured the components with calipers. The electronics and wires made some internal dimensions difficult to access, which made the main housing more challenging to measure.",
+            "When I was unsure how to model a feature, stepping back and thinking about its basic geometry helped. I used the rollback bar and feature suppression to try different approaches. The project also gave me practice with fill patterns and draft cuts."
+          ],
+          "image": "nitecore-exploded.webp",
+          "alt": "Exploded SOLIDWORKS assembly showing the work light’s housing, lens, circuit board, battery, base and fasteners",
+          "caption": "The exploded assembly shows how the modeled components fit inside the housing."
+        },
+        {
+          "id": "challenge",
+          "label": "03 / Challenges",
+          "title": "Modeling Challenges",
+          "paragraphs": [
+            "The main body was the most difficult part because it had very little symmetry, changing geometry, and many small details. Almost every other component connected to it, so it needed several mounting points that matched the surrounding parts.",
+            "Discrepancies between measured and intended dimensions caused some parts to interfere in the assembly. I rechecked the dimensions and adjusted the housing’s mounting features where components collided."
+          ],
+          "pair": [
+            {
+              "image": "nitecore-body.webp",
+              "alt": "Isometric CAD view of the work light’s black main housing and internal mounting features",
+              "caption": "Main housing: irregular geometry and several mounting interfaces."
+            },
+            {
+              "image": "nitecore-section.webp",
+              "alt": "Sectioned CAD model revealing the interior of the main housing",
+              "caption": "Section view: internal geometry that is hidden in the finished assembly."
+            }
+          ]
+        },
+        {
+          "id": "drawings",
+          "label": "04 / Documentation",
+          "title": "Engineering Drawings",
+          "paragraphs": [
+            "The main body was the most difficult drawing because of its limited symmetry, small details, patterns, and threads. I also gained experience with hole tables while creating the drawings."
+          ],
+          "image": "nitecore-drawing.webp",
+          "alt": "Engineering drawing of the main housing with multiple views, sections and dimensions",
+          "caption": "Engineering drawing of the main housing. Open the image to inspect the dimensions and views."
+        },
+        {
+          "id": "results",
+          "label": "05 / Results",
+          "title": "Results & Lessons Learned",
+          "paragraphs": [
+            "The model has several differences from the original product. The buttons are extruded from the main body rather than modeled as separate parts, and the button pattern is slightly different. I omitted the rubber sealing rings and their grooves, and some material appearances differ from the physical work light.",
+            "Trying different modeling techniques took more time than I expected. One of the main lessons was knowing when to stop adding detail, especially for internal pieces that contributed little to the project. The drawings took about as much time as modeling, so I learned to allow enough time for both. I also learned to save frequently."
+          ]
+        }
+      ],
+      "gallery_title": "CAD Gallery",
+      "gallery": [
+        {
+          "image": "nitecore-compact.webp",
+          "alt": "Compact folded configuration of Andrew’s Nitecore CAD assembly",
+          "caption": "The assembled model with the stand folded beneath the housing."
+        },
+        {
+          "image": "nitecore-exploded.webp",
+          "alt": "Exploded CAD assembly of the Nitecore work light",
+          "caption": "Exploded view of the modeled assembly."
+        },
+        {
+          "image": "nitecore-body.webp",
+          "alt": "Detailed CAD view of the black main housing",
+          "caption": "The main body was the most demanding part to measure and model."
+        },
+        {
+          "image": "nitecore-section.webp",
+          "alt": "Section through the CAD housing",
+          "caption": "A section through the main body reveals the internal geometry."
+        },
+        {
+          "image": "nitecore-reference.webp",
+          "alt": "Reference image of the original Nitecore work light included in the project presentation",
+          "caption": "Original-product reference included in my presentation, shown for comparison with my CAD model."
+        }
+      ]
+    },
+    {
+      "slug": "eagle-scout",
+      "number": "02",
+      "title": "Eagle Scout service project",
+      "subtitle": "A shed and accessible sink for Animal Assisted Happiness",
+      "category": "leadership",
+      "category_label": "Construction · Project leadership",
+      "status": "Completed",
+      "year": "2024",
+      "summary": "I planned and led a shed and accessible-sink project for Animal Assisted Happiness.",
+      "lead": "For my Eagle Scout project, I planned, budgeted, and led the construction of a shed structure and an accessible sink at Animal Assisted Happiness. I organized the workdays and taught volunteers how to carry out tasks safely. Other Scouts, adult volunteers, and the beneficiary helped complete the work.",
+      "hero": "eagle-finished.webp",
+      "hero_alt": "Andrew beside the finished shed at Animal Assisted Happiness",
+      "hero_caption": "The finished shed at Animal Assisted Happiness. My team built the floor, roof, and wall framing; the beneficiary completed the enclosure.",
+      "facts": [
+        [
+          "Beneficiary",
+          "Animal Assisted Happiness"
+        ],
+        [
+          "My role",
+          "Planning, budgeting & build leadership"
+        ],
+        [
+          "Scale",
+          "8 × 10 ft structure & accessible sink"
+        ],
+        [
+          "Team effort",
+          "229.25 total work hours"
+        ]
+      ],
+      "sections": [
+        {
+          "id": "overview",
+          "label": "01 / Overview",
+          "title": "Project Overview",
+          "paragraphs": [
+            "The farm needed a place for a washer and dryer to clean animal bedding, along with a handwashing location that people with disabilities could use. My project included a shed with a floor, roof, and framing for two walls, as well as replacing an old sink and countertop.",
+            "I developed the drawings, researched materials and accessibility requirements, planned the budget, and led the construction workdays. A volunteer at the farm also gave me advice during planning."
+          ],
+          "pair": [
+            {
+              "image": "eagle-before.webp",
+              "alt": "The original outdoor area beside the red farm building before shed construction",
+              "caption": "Before construction: the outdoor area beside the farm building."
+            },
+            {
+              "image": "eagle-sink.webp",
+              "alt": "The installed accessible sink and countertop with open knee space underneath",
+              "caption": "The replacement sink and countertop provide an accessible handwashing location."
+            }
+          ]
+        },
+        {
+          "id": "planning",
+          "label": "02 / Planning",
+          "title": "Planning & Design Changes",
+          "paragraphs": [
+            "The original proposal was an open shedrow with four posts and a roof. As the beneficiary’s needs changed from storage to a laundry room, the project expanded to include a floor and wall framing. This required changes to most of my plans, including the material lists, cost estimates, time estimates, and tasks for each workday.",
+            "We agreed that my team would build the structure and the beneficiary would finish the walls and remaining enclosure work. During planning, I also incorporated advice to use redwood and post-base brackets to improve resistance to rot."
+          ]
+        },
+        {
+          "id": "construction",
+          "label": "03 / Construction",
+          "title": "Construction",
+          "paragraphs": [
+            "I divided the construction into stages so volunteers knew what needed to happen each day. These included marking the post locations, digging holes, setting and leveling the brackets, pouring concrete, installing posts and beams, and adding rafters and roofing. The expanded project also included the floor and wall framing.",
+            "For the sink, the work included removing the old fixture, cutting openings in the countertop, adding support for the new sink, and connecting the plumbing. I explained the tasks and safety precautions before work began. My safety plan assigned cutting tasks to adults."
+          ],
+          "image": "eagle-structure.webp",
+          "alt": "The roofed timber shed structure during construction, before enclosure",
+          "caption": "The roof and framing during construction. The expanded scope added a floor and wall framing to the original open structure."
+        },
+        {
+          "id": "leadership",
+          "label": "04 / Leadership",
+          "title": "Leadership & Challenges",
+          "paragraphs": [
+            "At the beginning, I found it difficult to step back and let other people do the work. I also struggled to organize multiple tasks at the same time. As the project progressed, I adjusted which volunteers attended each day based on the jobs available and organized more tasks to happen at once. This gave people more useful work to do.",
+            "I also put off parts of the planning. During construction, several tasks took longer than expected, so we stayed later than planned to finish within the expected number of workdays.",
+            "We ran short of some nails and screws, but had enough to finish each day’s work. I bought more supplies before the next workday and returned excess wood at the end of the project."
+          ]
+        },
+        {
+          "id": "results",
+          "label": "05 / Results",
+          "title": "Results & Lessons Learned",
+          "paragraphs": [
+            "We completed the structural work and sink installation within the available funds and without injuries. The beneficiary completed the shed’s enclosure after my team’s structural work.",
+            "The main lessons for me were to plan further ahead and organize work so several tasks could happen at once. By the end of the project, I was better at keeping volunteers involved and allowing them to carry out the work themselves. Planning which people and tasks were needed for each day helped me lead the later workdays more effectively."
+          ]
+        }
+      ],
+      "gallery_title": "Construction Gallery",
+      "gallery": [
+        {
+          "image": "eagle-before.webp",
+          "alt": "Farm worksite before the Eagle Scout project",
+          "caption": "The site before the build."
+        },
+        {
+          "image": "eagle-posts.webp",
+          "alt": "Timber posts set in brackets at the worksite",
+          "caption": "Posts and bases establish the structure’s layout."
+        },
+        {
+          "image": "eagle-framing.webp",
+          "alt": "Shed frame under construction beside the farm building",
+          "caption": "Building the timber frame."
+        },
+        {
+          "image": "eagle-roof-framing.webp",
+          "alt": "Roof framing above the timber shed structure",
+          "caption": "Adding the roof structure."
+        },
+        {
+          "image": "andrew-building.webp",
+          "alt": "Andrew standing inside the framed shed",
+          "caption": "Inside the structure during construction."
+        },
+        {
+          "image": "eagle-finished.webp",
+          "alt": "Andrew beside the completed shed exterior",
+          "caption": "The completed shed after the beneficiary’s enclosure work."
+        },
+        {
+          "image": "eagle-plaque.webp",
+          "alt": "Eagle Scout project plaque naming Drew Honer and Troop 31",
+          "caption": "The project plaque at Animal Assisted Happiness."
+        }
+      ]
+    },
+    {
+      "slug": "autonomous-racing",
+      "number": "03",
+      "title": "CU Autonomous Racing",
+      "subtitle": "Steering-system design & master assembly",
+      "category": "cad",
+      "category_label": "Mechanical design · Onshape",
+      "status": "Ongoing",
+      "year": "2026–present",
+      "summary": "Contributing to the steering system and master CAD assembly for CU Autonomous Racing.",
+      "lead": "I’m working with CU Autonomous Racing on steering-system design and the master CAD assembly.",
+      "facts": [
+        [
+          "Team",
+          "CU Autonomous Racing"
+        ],
+        [
+          "My focus",
+          "Steering system & master assembly"
+        ],
+        [
+          "Tools",
+          "CAD / Onshape"
+        ],
+        [
+          "Status",
+          "Ongoing development"
+        ]
+      ],
+      "placeholder": "Ongoing team project.",
+      "sections": [
+        {
+          "id": "overview",
+          "label": "01 / Current Work",
+          "title": "Current Work",
+          "paragraphs": [
+            "My work focuses on the steering-system CAD and master vehicle assembly."
+          ]
+        },
+        {
+          "id": "next",
+          "label": "02 / Goals",
+          "title": "Development Goals",
+          "paragraphs": [
+            "I plan to contribute additional components and mounting designs as development continues."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rear-approach",
+      "number": "04",
+      "title": "Rear-approach alert system",
+      "subtitle": "A driver-awareness prototype",
+      "category": "electronics",
+      "category_label": "Arduino · Sensing & wireless",
+      "status": "Ongoing",
+      "year": "2026–present",
+      "summary": "Exploring rear distance sensing and wireless communication with an Arduino-based prototype.",
+      "lead": "This team project began as a left-lane camping detector and developed into a driver-awareness concept intended to identify vehicles approaching rapidly from behind.",
+      "facts": [
+        [
+          "Platform",
+          "Arduino-based electronics"
+        ],
+        [
+          "Sensing",
+          "LIDAR distance measurements"
+        ],
+        [
+          "Communication",
+          "NRF24 wireless modules"
+        ],
+        [
+          "Interface",
+          "LCD display"
+        ]
+      ],
+      "placeholder": "Prototype development in progress.",
+      "sections": [
+        {
+          "id": "overview",
+          "label": "01 / Overview",
+          "title": "Project Overview",
+          "paragraphs": [
+            "The goal is to use changes in measured distance to identify rapidly approaching vehicles and show information on the driver’s display."
+          ]
+        },
+        {
+          "id": "next",
+          "label": "02 / Testing",
+          "title": "Development & Testing",
+          "paragraphs": [
+            "Development and testing are ongoing. Detection performance has not yet been validated."
+          ]
+        }
+      ]
+    }
+  ]
+}
