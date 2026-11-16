@@ -13,42 +13,42 @@
       "slug": "nitecore",
       "number": "01",
       "title": "Nitecore NWL20",
-      "subtitle": "Reverse engineering a work light",
+      "subtitle": "Reverse Engineering a Work Light",
       "category": "cad",
-      "category_label": "Reverse engineering · SOLIDWORKS",
+      "category_label": "Reverse Engineering · SOLIDWORKS",
       "status": "Completed",
       "year": "2026",
       "summary": "I disassembled and measured a Nitecore work light, then modeled its parts and assembly in SOLIDWORKS.",
-      "lead": "I disassembled a Nitecore NWL20 work light and recreated its components and assembly in SOLIDWORKS.",
+      "lead": "I wanted to understand how a work light’s housing, hinge, and internal components fit together.",
       "hero": "nitecore-standing.webp",
       "hero_alt": "Andrew’s SOLIDWORKS model of the yellow and black Nitecore NWL20 in its upright position",
       "hero_caption": "My assembled SOLIDWORKS model, shown in the upright configuration.",
       "facts": [
         [
-          "Context",
-          "MCEN 1025 · April–May 2026"
+          "Dates",
+          "April–May 2026"
         ],
         [
-          "My role",
-          "Measurement, CAD & drawings"
+          "Course",
+          "MCEN 1025"
         ],
         [
-          "Tools",
-          "SOLIDWORKS, calipers"
+          "My Role",
+          "Individual project"
         ],
         [
           "Deliverables",
           "16 parts · 2 subassemblies · 5 drawings"
         ]
       ],
-      "note": "An educational reverse-engineering project. Nitecore designed the original product. I created the CAD model and engineering drawings shown here.",
+      "note": "Nitecore designed the original work light. I created the CAD model and drawings shown here.",
       "sections": [
         {
           "id": "overview",
           "label": "01 / Overview",
           "title": "Project Overview",
           "paragraphs": [
-            "I chose this work light because I wanted something I could take apart and learn about while making the model. The NWL20 has a magnetic base and a hinge that rotates through 180 degrees, along with electronics, wiring, and internal mounting features."
+            "I chose the NWL20 because I could take it apart and see how features like the magnetic base, 180-degree hinge, and carabiner were built. My goal was to recreate the parts and their assembly in SOLIDWORKS."
           ]
         },
         {
@@ -56,8 +56,7 @@
           "label": "02 / Process",
           "title": "Measurement & Modeling",
           "paragraphs": [
-            "I measured the components with calipers. The electronics and wires made some internal dimensions difficult to access, which made the main housing more challenging to measure.",
-            "When I was unsure how to model a feature, stepping back and thinking about its basic geometry helped. I used the rollback bar and feature suppression to try different approaches. The project also gave me practice with fill patterns and draft cuts."
+            "I disassembled the light and measured the parts with calipers. I had to work around the circuit board and wires to reach some of the housing dimensions. I then put the modeled parts together in CAD to see how they fit."
           ],
           "image": "nitecore-exploded.webp",
           "alt": "Exploded SOLIDWORKS assembly showing the work light’s housing, lens, circuit board, battery, base and fasteners",
@@ -68,8 +67,10 @@
           "label": "03 / Challenges",
           "title": "Modeling Challenges",
           "paragraphs": [
-            "The main body was the most difficult part because it had very little symmetry, changing geometry, and many small details. Almost every other component connected to it, so it needed several mounting points that matched the surrounding parts.",
-            "Discrepancies between measured and intended dimensions caused some parts to interfere in the assembly. I rechecked the dimensions and adjusted the housing’s mounting features where components collided."
+            "The housing changes shape along its length and has very little symmetry. When I got stuck on a detail, I broke the shape down into simpler geometry and tried building it one feature at a time.",
+            "During development, I used the rollback bar to step back to an earlier point in the model. I also used feature suppression to temporarily take a modeling step out of the build. Both let me compare different ways to make a shape before choosing the approach I wanted to keep.",
+            "For the button on the outside of the housing, I used a fill pattern to repeat a detail within the button’s outline. I used draft cuts to recreate the slight taper on the housing. That angle gives an injection-molded part clearance as it comes out of the mold.",
+            "Several parts mount to the housing, so small measurement errors caused parts to overlap in the assembly. Where parts collided, I went back to the measurements and adjusted the dimensions of the mounting features."
           ],
           "pair": [
             {
@@ -89,7 +90,7 @@
           "label": "04 / Documentation",
           "title": "Engineering Drawings",
           "paragraphs": [
-            "The main body was the most difficult drawing because of its limited symmetry, small details, patterns, and threads. I also gained experience with hole tables while creating the drawings."
+            "I used detail views to enlarge small features so I could dimension them without crowding the main views. Section views showed the internal features and how the housing geometry changes through the part."
           ],
           "image": "nitecore-drawing.webp",
           "alt": "Engineering drawing of the main housing with multiple views, sections and dimensions",
@@ -100,8 +101,8 @@
           "label": "05 / Results",
           "title": "Results & Lessons Learned",
           "paragraphs": [
-            "The model has several differences from the original product. The buttons are extruded from the main body rather than modeled as separate parts, and the button pattern is slightly different. I omitted the rubber sealing rings and their grooves, and some material appearances differ from the physical work light.",
-            "Trying different modeling techniques took more time than I expected. One of the main lessons was knowing when to stop adding detail, especially for internal pieces that contributed little to the project. The drawings took about as much time as modeling, so I learned to allow enough time for both. I also learned to save frequently."
+            "I modeled the buttons as part of the housing and left out the rubber seals and their grooves. The button pattern and material appearances also differ from the physical light. Those were limits of the model I documented alongside the assembly.",
+            "Trying different ways to build a feature took longer than I expected, and the drawings took about as much time as the modeling. I learned to budget time for both and decide which small details were worth modeling."
           ]
         }
       ],
@@ -137,33 +138,33 @@
     {
       "slug": "eagle-scout",
       "number": "02",
-      "title": "Eagle Scout service project",
-      "subtitle": "A shed and accessible sink for Animal Assisted Happiness",
+      "title": "Eagle Scout Service Project",
+      "subtitle": "A Shed and Accessible Sink for Animal Assisted Happiness",
       "category": "leadership",
-      "category_label": "Construction · Project leadership",
+      "category_label": "Construction · Project Leadership",
       "status": "Completed",
       "year": "2024",
       "summary": "I planned and led a shed and accessible-sink project for Animal Assisted Happiness.",
-      "lead": "For my Eagle Scout project, I planned, budgeted, and led the construction of a shed structure and an accessible sink at Animal Assisted Happiness. I organized the workdays and taught volunteers how to carry out tasks safely. Other Scouts, adult volunteers, and the beneficiary helped complete the work.",
+      "lead": "I led Scouts and adult volunteers in building a shed structure and replacing an outdoor sink at Animal Assisted Happiness.",
       "hero": "eagle-finished.webp",
       "hero_alt": "Andrew beside the finished shed at Animal Assisted Happiness",
-      "hero_caption": "The finished shed at Animal Assisted Happiness. My team built the floor, roof, and wall framing; the beneficiary completed the enclosure.",
+      "hero_caption": "The finished shed at Animal Assisted Happiness. My team built the floor, roof, and wall framing. The beneficiary finished the enclosure.",
       "facts": [
+        [
+          "Dates",
+          "January–February 2024"
+        ],
         [
           "Beneficiary",
           "Animal Assisted Happiness"
         ],
         [
-          "My role",
-          "Planning, budgeting & build leadership"
+          "My Role",
+          "Planning, budgeting & construction leadership"
         ],
         [
-          "Scale",
-          "8 × 10 ft structure & accessible sink"
-        ],
-        [
-          "Team effort",
-          "229.25 total work hours"
+          "Total Work Hours",
+          "Approximately 229 hours"
         ]
       ],
       "sections": [
@@ -172,8 +173,7 @@
           "label": "01 / Overview",
           "title": "Project Overview",
           "paragraphs": [
-            "The farm needed a place for a washer and dryer to clean animal bedding, along with a handwashing location that people with disabilities could use. My project included a shed with a floor, roof, and framing for two walls, as well as replacing an old sink and countertop.",
-            "I developed the drawings, researched materials and accessibility requirements, planned the budget, and led the construction workdays. A volunteer at the farm also gave me advice during planning."
+            "The farm needed a covered space for a washer and dryer to clean animal bedding and a handwashing station that people with disabilities could use. I drew the plans, researched materials and accessibility requirements, and set the budget."
           ],
           "pair": [
             {
@@ -193,8 +193,7 @@
           "label": "02 / Planning",
           "title": "Planning & Design Changes",
           "paragraphs": [
-            "The original proposal was an open shedrow with four posts and a roof. As the beneficiary’s needs changed from storage to a laundry room, the project expanded to include a floor and wall framing. This required changes to most of my plans, including the material lists, cost estimates, time estimates, and tasks for each workday.",
-            "We agreed that my team would build the structure and the beneficiary would finish the walls and remaining enclosure work. During planning, I also incorporated advice to use redwood and post-base brackets to improve resistance to rot."
+            "I first proposed an open shedrow with four posts and a roof for storage. When the farm asked for a laundry space, I revised the 8 × 10 ft plan to include a floor and framing for two walls. I updated the material list, cost estimate, and work schedule. I also used redwood and post-base brackets based on feedback about reducing the risk of rot."
           ]
         },
         {
@@ -202,21 +201,19 @@
           "label": "03 / Construction",
           "title": "Construction",
           "paragraphs": [
-            "I divided the construction into stages so volunteers knew what needed to happen each day. These included marking the post locations, digging holes, setting and leveling the brackets, pouring concrete, installing posts and beams, and adding rafters and roofing. The expanded project also included the floor and wall framing.",
-            "For the sink, the work included removing the old fixture, cutting openings in the countertop, adding support for the new sink, and connecting the plumbing. I explained the tasks and safety precautions before work began. My safety plan assigned cutting tasks to adults."
+            "I broke the revised build into stages. We marked and dug the post holes, leveled the brackets, and poured concrete before setting the posts and building the floor, wall framing, and roof. We also removed the old sink and installed the replacement sink, countertop, and supports.",
+            "I showed volunteers how to do their jobs and explained the hazards before they started. My plan called for a safety briefing each workday, closed-toe shoes, and a first-aid kit within reach. We planned for safety glasses, gloves, and hearing protection as needed and kept loose clothing and long hair clear of drills. I assigned cutting to adults and planned for Scouts to measure, dig, and drill under adult supervision."
           ],
           "image": "eagle-structure.webp",
           "alt": "The roofed timber shed structure during construction, before enclosure",
-          "caption": "The roof and framing during construction. The expanded scope added a floor and wall framing to the original open structure."
+          "caption": "The roof and framing before the shed was enclosed."
         },
         {
           "id": "leadership",
           "label": "04 / Leadership",
           "title": "Leadership & Challenges",
           "paragraphs": [
-            "At the beginning, I found it difficult to step back and let other people do the work. I also struggled to organize multiple tasks at the same time. As the project progressed, I adjusted which volunteers attended each day based on the jobs available and organized more tasks to happen at once. This gave people more useful work to do.",
-            "I also put off parts of the planning. During construction, several tasks took longer than expected, so we stayed later than planned to finish within the expected number of workdays.",
-            "We ran short of some nails and screws, but had enough to finish each day’s work. I bought more supplies before the next workday and returned excess wood at the end of the project."
+            "The expanded scope gave me more jobs to coordinate. Early on, I had trouble stepping back and letting others do the work. As the build went on, I assigned jobs that could run at the same time and scheduled younger Scouts for days with work they could do. That helped me delegate individual tasks while keeping the whole workday moving."
           ]
         },
         {
@@ -224,8 +221,8 @@
           "label": "05 / Results",
           "title": "Results & Lessons Learned",
           "paragraphs": [
-            "We completed the structural work and sink installation within the available funds and without injuries. The beneficiary completed the shed’s enclosure after my team’s structural work.",
-            "The main lessons for me were to plan further ahead and organize work so several tasks could happen at once. By the end of the project, I was better at keeping volunteers involved and allowing them to carry out the work themselves. Planning which people and tasks were needed for each day helped me lead the later workdays more effectively."
+            "My team completed the structural work and sink installation within the available funds and without injuries. The beneficiary finished the shed enclosure and connected the sink plumbing afterward.",
+            "Some jobs took longer than I estimated, so we stayed later to finish within the planned number of workdays. I learned to leave more room in the schedule for jobs that might take longer than expected."
           ]
         }
       ],
@@ -272,47 +269,48 @@
       "slug": "autonomous-racing",
       "number": "03",
       "title": "CU Autonomous Racing",
-      "subtitle": "Steering-system design & master assembly",
+      "subtitle": "Steering Design & Master Assembly",
       "category": "cad",
-      "category_label": "Mechanical design · Onshape",
+      "category_label": "Mechanical Design · Onshape",
       "status": "Ongoing",
-      "year": "2026–present",
-      "summary": "Contributing to the steering system and master CAD assembly for CU Autonomous Racing.",
-      "lead": "I’m working with CU Autonomous Racing on steering-system design and the master CAD assembly.",
+      "year": "2026–Present",
+      "summary": "Completed kart chassis CAD for the master assembly, with steering design ongoing.",
+      "lead": "I work on the steering and master assembly subteams. We’re developing a go-kart that can steer under computer control.",
       "facts": [
         [
-          "Team",
-          "CU Autonomous Racing"
+          "Dates",
+          "Fall 2026–Present"
         ],
         [
-          "My focus",
-          "Steering system & master assembly"
+          "My Role",
+          "Steering & master assembly"
         ],
         [
           "Tools",
-          "CAD / Onshape"
+          "Onshape"
         ],
         [
           "Status",
-          "Ongoing development"
+          "Ongoing steering design"
         ]
       ],
-      "placeholder": "Ongoing team project.",
+      "placeholder": "Steering and vehicle integration are in development.",
       "sections": [
         {
           "id": "overview",
-          "label": "01 / Current Work",
-          "title": "Current Work",
+          "label": "01 / Steering & Chassis",
+          "title": "CAD Work to Date",
           "paragraphs": [
-            "My work focuses on the steering-system CAD and master vehicle assembly."
+            "For our preliminary design review, I modeled a simplified pulley layout in Onshape. Our concept uses a 6 N·m stepper motor and a toothed belt, with a proposed 15-tooth motor pulley driving a 60-tooth pulley on the steering column. The larger pulley trades rotation speed for torque at the column.",
+            "I completed the reverse-engineered CAD model of the kart chassis. It gives the team a common reference for bringing each subteam’s parts into the master assembly."
           ]
         },
         {
           "id": "next",
-          "label": "02 / Goals",
-          "title": "Development Goals",
+          "label": "02 / Next Steps",
+          "title": "Next Steps",
           "paragraphs": [
-            "I plan to contribute additional components and mounting designs as development continues."
+            "We’re beginning force analysis to understand the loads on the steering system. We’ll use the results to guide the next design decisions as we develop the motor mount and finalize the belt and pulley layout."
           ]
         }
       ]
@@ -320,14 +318,14 @@
     {
       "slug": "rear-approach",
       "number": "04",
-      "title": "Rear-approach alert system",
-      "subtitle": "A driver-awareness prototype",
+      "title": "Rear-Approach Alert System",
+      "subtitle": "Driver-Awareness Prototype",
       "category": "electronics",
-      "category_label": "Arduino · Sensing & wireless",
+      "category_label": "Arduino · Sensing & Wireless",
       "status": "Ongoing",
-      "year": "2026–present",
+      "year": "2026–Present",
       "summary": "Exploring rear distance sensing and wireless communication with an Arduino-based prototype.",
-      "lead": "This team project began as a left-lane camping detector and developed into a driver-awareness concept intended to identify vehicles approaching rapidly from behind.",
+      "lead": "Our team is developing a prototype to alert drivers when another vehicle approaches quickly from behind.",
       "facts": [
         [
           "Platform",
@@ -353,7 +351,7 @@
           "label": "01 / Overview",
           "title": "Project Overview",
           "paragraphs": [
-            "The goal is to use changes in measured distance to identify rapidly approaching vehicles and show information on the driver’s display."
+            "The project began as a left-lane camping detector. We shifted the focus to using changes in measured distance to estimate approach speed and show a warning on the driver’s display."
           ]
         },
         {
