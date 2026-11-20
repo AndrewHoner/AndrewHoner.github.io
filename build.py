@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build the static portfolio using only Python's standard library."""
 import json
+import hashlib
 from pathlib import Path
 from html import escape
 
@@ -16,10 +17,11 @@ def link(text, href, cls='text-link', external=False):
     return f'<a class="{cls}" href="{e(href)}"'+(' target="_blank" rel="noopener noreferrer"' if external else '')+f'>{text}<span class="arrow" aria-hidden="true">↗</span></a>'
 
 def layout(title, body, active='', description=None):
+    stylesheet_version = hashlib.sha256((OUT / 'styles.css').read_bytes()).hexdigest()[:12]
     nav = ''.join(f'<a href="{slug}.html"'+(' aria-current="page"' if active == slug else '')+f'>{name}</a>' for slug,name in [('projects','Projects'),('about','About'),('resume','Resume'),('contact','Contact')])
     description = description or 'Mechanical engineering portfolio of Andrew Honer, a CU Boulder student working in CAD, reverse engineering, fabrication, and electronics.'
     return f'''<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#204d36"><title>{e(title)} | Andrew Honer</title><meta name="description" content="{e(description)}"><meta property="og:title" content="{e(title)} | Andrew Honer"><meta property="og:description" content="{e(description)}"><meta property="og:type" content="website"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script src="site.js" defer></script></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#204d36"><title>{e(title)} | Andrew Honer</title><meta name="description" content="{e(description)}"><meta property="og:title" content="{e(title)} | Andrew Honer"><meta property="og:description" content="{e(description)}"><meta property="og:type" content="website"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v={stylesheet_version}"><script src="site.js" defer></script></head>
 <body><a class="skip" href="#main">Skip to content</a><header class="header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Andrew Honer, home"><span class="monogram" aria-hidden="true">AH</span><span class="wordmark">Andrew Honer</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" type="button">Menu</button><nav class="nav" id="main-nav" aria-label="Main navigation">{nav}</nav></div></header>
 <main id="main">{body}</main><footer class="footer"><div class="container footer-inner"><span>Andrew Honer · Boulder, Colorado</span><div class="footer-links"><a href="mailto:{e(PERSON['email'])}">Email ↗</a><a href="{e(PERSON['linkedin'])}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="assets/Andrew_Honer_Resume.pdf" download="Andrew_Honer_Resume.pdf">Resume ↓</a></div></div></footer>
 <dialog class="lightbox" aria-label="Project image viewer"><div class="lightbox-top"><span class="lightbox-counter"></span><button type="button" class="icon-button" data-close aria-label="Close image viewer">Close ×</button></div><img class="lightbox-image" alt=""><div class="lightbox-bottom"><p class="lightbox-caption"></p><div class="lightbox-controls"><button class="icon-button" type="button" data-direction="-1" aria-label="Previous image">← Previous</button><button class="icon-button" type="button" data-direction="1" aria-label="Next image">Next →</button></div></div></dialog></body></html>'''
