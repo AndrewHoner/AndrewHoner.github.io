@@ -20,6 +20,6 @@ The GitHub Actions workflow builds the site using Python’s standard library an
 
 ## Add a project
 
-Copy a project object in `content.json`, give it a unique slug and project number, and replace its content. Add suitable website images to `dist/assets/`, then rebuild. The Projects page updates automatically. Homepage featured projects are the first two items; later items appear in the ongoing-work list.
+Copy a project object in `content.json`, give it a unique slug and project number, and replace its content. Add suitable website images to `dist/assets/`, then rebuild. The Projects page updates automatically. Homepage featured projects are the first two items; later items appear in the More Projects list with their current status. Optional project fields support a system signal path, an equation with explanatory text, and troubleshooting subsections.
 
 This repository contains only the website, its editable content and build code, optimized website images, and the public Resume.

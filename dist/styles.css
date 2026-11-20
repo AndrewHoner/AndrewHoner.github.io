@@ -8,3 +8,15 @@
 .section-head h2{flex-shrink:0}.gallery-caption .gallery-count{padding-top:0}@media(max-width:640px){.section-head>span{max-width:50%;text-align:right}}
 
 .project-grid .ongoing-cover{width:100%;min-width:0}
+
+/* Approaching Vehicle Warning System diagrams and original-ratio photographs. */
+.case-hero.natural-photo img{height:auto;min-height:0;max-height:none;object-fit:contain}
+.approach-project .figure-pair img{aspect-ratio:auto;height:auto;object-fit:contain}
+.approach-project .case-subsection h3{font-size:24px;margin:26px 0 12px}
+.approach-project .signal-path{list-style:none;margin:28px 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.approach-project .signal-path li{position:relative;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);background:var(--paper,#fafaf6);padding:18px 8px;text-align:center;font-size:14px;line-height:1.45;color:var(--green)}
+.approach-project .signal-path li+li::before{content:'→';position:absolute;left:-15px;color:var(--green)}
+.approach-project .system-equation{border-left:2px solid var(--green);padding:6px 0 6px 22px;margin:28px 0}
+.approach-project .system-equation p{margin:8px 0}
+.approach-project .equation-expression{font-family:var(--serif);font-size:26px;color:var(--green)}
+@media(max-width:600px){.approach-project .signal-path{grid-template-columns:1fr;gap:18px}.approach-project .signal-path li{padding:12px}.approach-project .signal-path li+li::before{content:'↓';left:calc(50% - 4px);top:-20px}.approach-project .figure-pair{grid-template-columns:1fr;gap:24px}}

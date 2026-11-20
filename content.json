@@ -318,51 +318,185 @@
     {
       "slug": "rear-approach",
       "number": "04",
-      "title": "Rear-Approach Alert System",
-      "subtitle": "Driver-Awareness Prototype",
+      "title": "Approaching Vehicle Warning System",
+      "subtitle": "Wireless Distance Sensing & Driver Alerts",
       "category": "electronics",
-      "category_label": "Arduino · Sensing & Wireless",
-      "status": "Ongoing",
-      "year": "2026–Present",
-      "summary": "Exploring rear distance sensing and wireless communication with an Arduino-based prototype.",
-      "lead": "Our team is developing a prototype to alert drivers when another vehicle approaches quickly from behind.",
+      "category_label": "Software · Electronics & Integration",
+      "status": "Completed",
+      "year": "Fall 2026",
+      "summary": "A two-device prototype that estimates closing speed and warns the driver through an OLED display and speaker.",
+      "lead": "I led software development, integration, and troubleshooting for our team’s wireless rear-approach warning prototype.",
       "facts": [
         [
-          "Platform",
-          "Arduino-based electronics"
+          "Dates",
+          "Fall 2026"
         ],
         [
-          "Sensing",
-          "LIDAR distance measurements"
+          "Course",
+          "GEEN 1400 · Engineering Projects"
         ],
         [
-          "Communication",
-          "NRF24 wireless modules"
+          "My Role",
+          "Software, integration & troubleshooting"
         ],
         [
-          "Interface",
-          "LCD display"
+          "Status",
+          "Completed prototype"
         ]
       ],
-      "placeholder": "Prototype development in progress.",
       "sections": [
         {
           "id": "overview",
-          "label": "01 / Overview",
-          "title": "Project Overview",
+          "label": "01 / Problem & Objectives",
+          "title": "Problem & Design Objectives",
           "paragraphs": [
-            "The project began as a left-lane camping detector. We shifted the focus to using changes in measured distance to estimate approach speed and show a warning on the driver’s display."
+            "Drivers may miss a vehicle approaching quickly from behind. We developed an aftermarket warning-system prototype to help drivers recognize rapidly approaching or excessively close objects behind their vehicle.",
+            "The project started with left-lane driving behavior, then broadened into a rear-approach warning system. We aimed for consistent measurements, reliable warnings, affordable components, straightforward installation, and minimal interference with normal driving."
           ]
         },
         {
-          "id": "next",
-          "label": "02 / Testing",
-          "title": "Development & Testing",
+          "id": "system",
+          "label": "02 / System Design",
+          "title": "System Design",
           "paragraphs": [
-            "Development and testing are ongoing. Detection performance has not yet been validated."
+            "The prototype has two wireless devices in custom 3D-printed enclosures. At the rear of the vehicle, an Arduino reads a LiDARLite v3 sensor and sends distance measurements over long-range nRF24L01 radios to a second Arduino inside the car.",
+            "The receiver estimates relative closing speed from successive distance readings. A rolling average smooths fluctuations. An approximately 2-inch OLED normally shows distance and closing speed. If an object approaches too quickly or becomes too close, the display shows a warning and an MP3 audio module drives a speaker.",
+            "We began with an ultrasonic sensor, then moved to LiDAR for longer-distance measurements. The team also upgraded the radios, display, and speaker as the prototype developed."
+          ],
+          "signal_path": [
+            "LiDAR sensor",
+            "Transmitting Arduino",
+            "nRF24L01 wireless link",
+            "Receiving Arduino",
+            "OLED & speaker"
+          ],
+          "equation": {
+            "expression": "v = (d₁ − d₂) / Δt",
+            "description": "d₁ and d₂ are successive distance readings, separated by the elapsed time Δt. Positive v indicates an object closing the gap."
+          },
+          "pair": [
+            {
+              "image": "approach-interior-display.webp",
+              "alt": "Interior OLED and speaker module displaying 128 feet and estimated closing speed",
+              "caption": "The receiver displaying distance and estimated closing speed inside the car."
+            },
+            {
+              "image": "approach-fast-warning.webp",
+              "alt": "OLED interface displaying Warning and Approaching Fast",
+              "caption": "The approaching-fast warning interface during a prototype demonstration."
+            }
           ]
+        },
+        {
+          "id": "contributions",
+          "label": "03 / My Contributions",
+          "title": "Individual Contributions",
+          "paragraphs": [
+            "I handled nearly all software development and iteration. I defined the system’s behavior, configured the wireless link, processed LiDAR measurements, and implemented closing-speed calculations and rolling-average filtering.",
+            "I developed the warning logic for fast approaches and nearby objects, integrated the OLED interface and audible alerts, and adjusted audio timing. Much of the work involved getting the software and physical electronics to behave consistently together.",
+            "I also adjusted tolerances on an existing enclosure design before printing. The hardware, electronics, and enclosure work were shared team efforts."
+          ]
+        },
+        {
+          "id": "iteration",
+          "label": "04 / Troubleshooting",
+          "title": "Troubleshooting & Iteration",
+          "paragraphs": [],
+          "subsections": [
+            {
+              "title": "Isolating a Wireless Failure",
+              "paragraphs": [
+                "When the radios stopped communicating reliably, I first suspected the software. I reduced it to minimal transmitter and receiver test programs, swapped modules between Arduino boards, and isolated possible hardware causes. I eventually traced the failure to a faulty ground connection. Testing the simplest working setup helped me separate the connection problem from the application code."
+              ]
+            },
+            {
+              "title": "Stabilizing Readings & Warnings",
+              "paragraphs": [
+                "Early versions produced inconsistent closing-speed estimates, invalid distances, and unintended warnings. I revised measurement processing, the rolling average, and warning logic through repeated tests. I also worked on playback timing so audible warnings would play at the appropriate point."
+              ]
+            },
+            {
+              "title": "Fitting the Final Electronics",
+              "paragraphs": [
+                "The team tried several displays before settling on the larger OLED. The enclosure designs changed to fit the final electronics and a larger speaker. I refined the enclosure tolerances before printing."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "testing",
+          "label": "05 / Testing & Results",
+          "title": "Testing & Results",
+          "paragraphs": [
+            "We installed the prototype on my Mini Cooper Clubman and confirmed that the rear module could communicate with the interior receiver through the vehicle. In controlled tests, people walked and ran toward the sensor. We demonstrated both fast-approach and too-close warnings, and distance readings reached approximately 128 feet.",
+            "These demonstrations showed the prototype operating in its intended mounting configuration. Testing with moving vehicles remains future work, along with the accuracy and reliability evaluation needed for an automotive safety application.",
+            "The final expo poster listed $242 in hardware, including a $150 LiDAR sensor borrowed from the ITLL. The other listed components total $92. These figures describe the poster’s component budget."
+          ],
+          "image": "approach-expo-display.webp",
+          "alt": "Completed sensor and receiver devices with the final blue expo poster and demonstration screens",
+          "caption": "Our expo display with both completed devices, the final blue poster, and demonstration screens."
+        },
+        {
+          "id": "reflection",
+          "label": "06 / Lessons & Next Steps",
+          "title": "Reflection & Future Work",
+          "paragraphs": [
+            "I came into this project with programming and CAD experience, but working with physical electronics made me pay more attention to how the hardware and software affected each other. The ground-connection problem taught me to isolate variables and test components independently before changing the larger program.",
+            "I would order components and test the basic system earlier next time. We spent time refining enclosures before confirming that the parts inside them would work. That made later hardware changes more time-consuming.",
+            "Future ideas include camera-based vehicle identification, smaller enclosures, improved mounts, and controlled tests with moving vehicles."
+          ]
+        },
+        {
+          "id": "expo",
+          "label": "07 / Expo & Recognition",
+          "title": "Expo & Recognition",
+          "paragraphs": [
+            "We presented a working prototype at CU Boulder’s November 14, 2026 Engineering Projects Expo and received the APEX Innovation Award from the CU Racing Team.",
+            "Our five-person team, Big Kahunas, included Atahan Tosun, Carter Jenson, Andrew Honer, Jason Schwartz, and Ved Kadam. The course was taught by Professor Dan Godrick."
+          ],
+          "image": "approach-expo-team.webp",
+          "alt": "The five Big Kahunas team members with the completed prototype and expo poster",
+          "caption": "Big Kahunas at the Engineering Projects Expo. From left, Jason Schwartz, Ved Kadam, Andrew Honer, Carter Jenson, and Atahan Tosun."
         }
-      ]
+      ],
+      "hero": "approach-rear-module.webp",
+      "hero_alt": "Rear LiDAR module in its printed enclosure mounted on Andrew’s Mini Cooper Clubman",
+      "hero_caption": "The rear module on my Mini Cooper Clubman during a controlled prototype demonstration.",
+      "hero_style": "natural-photo",
+      "gallery_title": "Prototype & Expo Gallery",
+      "gallery": [
+        {
+          "image": "approach-rear-module.webp",
+          "alt": "Rear LiDAR sensor module mounted on the Mini Cooper Clubman",
+          "caption": "The rear distance-sensing module in its installed configuration."
+        },
+        {
+          "image": "approach-interior-display.webp",
+          "alt": "OLED distance and closing-speed readout inside the car",
+          "caption": "Distance and estimated closing speed on the interior receiver."
+        },
+        {
+          "image": "approach-fast-warning.webp",
+          "alt": "OLED showing the Approaching Fast warning interface",
+          "caption": "The warning screen during a prototype demonstration."
+        },
+        {
+          "image": "approach-expo-display.webp",
+          "alt": "Full expo display with both prototype devices and final blue poster",
+          "caption": "The completed system and final documentation at the expo."
+        },
+        {
+          "image": "approach-expo-team.webp",
+          "alt": "Big Kahunas team beside the project at the expo",
+          "caption": "Our five-person team with the finished prototype."
+        },
+        {
+          "image": "approach-award-group.webp",
+          "alt": "Big Kahunas team holding APEX Innovation Award certificates with CU Racing Team representatives",
+          "caption": "APEX Innovation Award recognition with the CU Racing Team, November 14, 2026."
+        }
+      ],
+      "page_class": "approach-project"
     }
   ]
 }

@@ -9,24 +9,16 @@
     "deck": "",
     "heading": "Background & Interests",
     "paragraphs": [
-      "I’m Drew, a mechanical engineering student at CU Boulder. I like figuring out how things work and then seeing what I can make or improve myself.",
-      "One of my favorite parts of mechanical engineering is going between CAD and hands-on work. I can work out how parts should fit on screen, then build something and see how it actually fits."
+      "I’m Drew, a sophomore mechanical engineering student at CU Boulder pursuing a physics minor. Growing up, I liked building models and LEGO. One Christmas, my dad and I built a four-foot-tall robot kit. I also helped with electrical, plumbing, and carpentry projects around the house, which made hands-on work something I enjoyed early on.",
+      "Physics was my favorite subject during my junior and senior years of high school, and I entered college as an engineering physics major. During freshman year, I found that I especially enjoyed CAD and the process of trying, testing, and revising a design. I switched to mechanical engineering for broader career options and more opportunities to design and build physical systems. I kept physics as a minor because I still wanted to study it.",
+      "Scouting and leading my Eagle Scout project reinforced how much I enjoy designing and building with other people. I’m interested in automotive engineering, aerospace, clean energy, and applications of physics, though I’m still figuring out which direction I want to pursue. Outside academics, I enjoy cars, backpacking, camping, skiing, and hands-on projects."
     ],
     "opportunity_heading": "Internship Opportunities",
     "opportunity_text": "I’m looking for a mechanical engineering internship where I can work on a design from CAD through prototyping and testing.",
     "photo": "andrew-expo-awards.jpg",
     "photo_alt": "Andrew Honer holding two APEX Innovation Award certificates at the engineering project expo",
     "photo_caption": "APEX Innovation Award certificates from the CU Racing Team at the engineering project expo, November 14, 2026.",
-    "details": [
-      {
-        "heading": "Engineering Interests",
-        "text": "I’m especially interested in cars and the mechanical design behind them. I’d also like to learn more about aerospace and clean energy."
-      },
-      {
-        "heading": "Outside Class",
-        "text": "Outside of class, I like backpacking, camping, and skiing."
-      }
-    ]
+    "details": []
   },
   "contact": {
     "heading": "Engineering Internship Opportunities",
